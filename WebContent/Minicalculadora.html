@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Minicalculadora</title>
+</head>
+<body>
+	<h1>Introduzca los valores que desea utilizar</h1>
+	<form action="CalculadoraServlet" method="get">
+		Número 1: <input type="number" name="numero1"/><br/>
+		Número 2: <input type="number" name="numero2"/><br/>
+		<p>Operaciones:</p>
+		<select name="operacion">
+			<option selected>Elige un tipo de operación</option>
+			<optgroup label="Operaciones Básicas">
+				<option value="0">Suma</option>
+				<option value="1">Resta</option>
+				<option value="2">Multiplicación</option>
+				<option value="3">División</option>
+			</optgroup>
+		</select>
+		<br/><br/>
+		<input type="submit" value="Calcular"/>
+	</form>
+</body>
+</html>
